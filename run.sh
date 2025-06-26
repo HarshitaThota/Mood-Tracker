@@ -1,6 +1,6 @@
 set -euo pipefail
 
-# Seed the canonical file your CLI reads (entries.json)
+# Seed the canonical file your CLI reads
 echo "⏳ Seeding sample data → entries.json"
 cp sample_data/entries_seed.json entries.json
 
@@ -9,7 +9,12 @@ echo
 echo "📋 All entries (via list):"
 python -m app.cli list
 
-# Run stats (distribution + streak)
+# Distribution report
 echo
-echo "📊 Stats (distribution + streak):"
-python -m app.cli stats
+echo "📊 Mood distribution report:"
+python -m app.cli report distribution
+
+# Streak report
+echo
+echo "📊 Mood streak report:"
+python -m app.cli report streak

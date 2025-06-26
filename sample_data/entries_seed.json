@@ -1,5 +1,5 @@
-[
-    {
+
+   [ {
       "id": 1,
       "mood": "happy",
       "date": "2025-06-25",
@@ -40,5 +40,65 @@
       "mood": "sad",
       "date": "2024-06-22",
       "note": "Rainy day"
-    }
+    },
+    {
+        "id": 8,
+        "mood": "anxious",
+        "date": "2024-06-23",
+        "note": "Project deadline looming"
+      },
+      {
+        "id": 9,
+        "mood": "neutral",
+        "date": "2024-06-24",
+        "note": "Just a regular day"
+      },
+      {
+        "id": 10,
+        "mood": "happy",
+        "date": "2024-06-25",
+        "note": "Got great feedback at work"
+      },
+      {
+        "id": 11,
+        "mood": "sad",
+        "date": "2024-06-26",
+        "note": "Missed my morning run"
+      },
+      {
+        "id": 12,
+        "mood": "excited",
+        "date": "2024-06-27",
+        "note": "Booked tickets for vacation!"
+      },
+      {
+        "id": 13,
+        "mood": "stressed",
+        "date": "2024-06-28",
+        "note": "Back-to-back meetings"
+      },
+      {
+        "id": 14,
+        "mood": "relaxed",
+        "date": "2024-06-29",
+        "note": "Evening yoga session"
+      },
+      {
+        "id": 15,
+        "mood": "angry",
+        "date": "2024-07-01",
+        "note": "Traffic was terrible"
+      },
+      {
+        "id": 16,
+        "mood": "happy",
+        "date": "2024-07-02",
+        "note": "Family dinner tonight"
+      },
+      {
+        "id": 17,
+        "mood": "anxious",
+        "date": "2024-07-03",
+        "note": null
+      }
   ]

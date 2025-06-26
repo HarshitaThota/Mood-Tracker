@@ -10,7 +10,7 @@ git clone https://github.com/harshiitaaa/Mood-Tracker.git
 cd Mood-Tracker
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-
+./run.sh   
 # 2. Try it
 mood add --type happy --date 2024-06-26 --note "Lunch with friends"
 mood report distribution

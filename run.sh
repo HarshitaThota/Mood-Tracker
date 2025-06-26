@@ -1,5 +1,12 @@
+set -euo pipefail
 
-python -m app.cli add --mood happy --date 2024-06-20
-python -m app.cli add --mood happy --date 2024-06-21
-python -m app.cli add --mood sad   --date 2024-06-22 --note "Rainy day"
-python -m app.cli stats
+echo "⏳ Seeding sample data → data.json"
+cp sample_data/entries_seed.json data.json
+
+echo
+echo "📋 All entries (via list):"
+python -m app.cli list --file data.json
+
+echo
+echo "📊 Stats (distribution + streak):"
+python -m app.cli stats --file data.json

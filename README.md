@@ -1,39 +1,3 @@
-<!-- # Daily Mood Tracker
-
-A simple, well-tested CLI for logging your daily mood and generating insights:
-
-- **Add** entries with `type`, `date`, and `note`  
-- **List** entries by date range  
-- **Report** your mood distribution, longest streaks, and trends  
-
----
-
-## 📦 Tech Stack
-
-- **Python 3.11**  
-- **Click** for CLI  
-- **JSON** (default) 
-- **pytest** for testing  
-
----
-
-## 🚀 Quick Start
-# 1. Clone & prep virtual env
-git clone https://github.com/harshiitaaa/Mood-Tracker.git
-cd Mood-Tracker
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-./run.sh   
-# 2. Try it
-mood add --type happy --date 2024-06-26 --note "Lunch with friends"
-mood report distribution
-
-## Roadmap
-- 🔨  Repository layer (JSON ↔ dataclass)
-- 📊  Analytics layer (distribution, streak)
-- 🖥️  CLI commands with Click -->
-
-
 # Daily Mood Tracker
 
 A small, fully-tested Python app for logging and analyzing your daily moods via:
@@ -72,25 +36,45 @@ A small, fully-tested Python app for logging and analyzing your daily moods via:
 
 ## 🛠️ Getting Started
 
-```bash
-# 1. Clone & enter
+
+1. Clone & enter
 git clone https://github.com/HarshitaThota/Mood-Tracker.git
 cd Mood-Tracker
 
-# 2. Create & activate venv
+2. Create & activate venv
 python3 -m venv .venv
 source .venv/bin/activate      # macOS/Linux
-# .venv\Scripts\activate       # Windows
+.venv\Scripts\activate         # Windows
 
 # 3. Install dependencies
 pip install -r requirements.txt
 
 
-## Usage 
+
+# Add a new entry
+mood add --mood happy --date 2024-06-26 --note "Lunch with friends"
+
+# List all entries (default: last 30 days)
+mood list
+
+# List entries within a custom range
+mood list --from-date 2024-06-01 --to-date 2024-06-30
+
+# Reports
+mood report distribution   # counts by mood
+mood report streak         # longest same-mood run
+mood report trend          # e.g. 7-day sliding summary
+
+# Demo Script
+bash run.sh   # seeds sample_data/entries_seed.json then prints all three reports
+
+---
+
+## 🎮 Usage
 
 # CLI
 # Add a new entry
-mood add --type happy --date 2024-06-26 --note "Lunch with friends"
+mood add --mood happy --date 2024-06-26 --note "Lunch with friends"
 
 # List all entries (default: last 30 days)
 mood list
@@ -127,7 +111,7 @@ Mood-Tracker/
 
 
 ## Architecture
-[ CLI ]
+   [ CLI ]
       ↓
 [ Controller ]           ← User input triggers
       ↓

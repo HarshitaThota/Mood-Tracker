@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "mood": "happy",
+    "date": "2025-06-26",
+    "note": "Lunch with bestie"
+  },
+  {
+    "id": 2,
+    "mood": "happy",
+    "date": "2025-03-16",
+    "note": "Lunch with bestie"
+  },
+  {
+    "id": 3,
+    "mood": "sad",
+    "date": "2025-03-17",
+    "note": "F on exam"
+  },
+  {
+    "id": 4,
+    "mood": "happy",
+    "date": "2025-01-01",
+    "note": "HAPPY NEW YEAR"
+  }
+]

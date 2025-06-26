@@ -19,3 +19,9 @@ mood report distribution
 app/              # source code package
 tests/            # pytest unit tests
 sample_data/      # seed JSON for demo -->
+## Roadmap
+- 🔨  Repository layer (JSON ↔ dataclass)
+- 📊  Analytics layer (distribution, streak)
+- 🖥️  CLI commands with Click
+- 🌐  Optional Flask UI
+- 🚀  Packaging & deployment (pipx / Docker)

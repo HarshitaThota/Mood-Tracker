@@ -7,7 +7,7 @@ setup(
     install_requires=["click"],
     entry_points={
         "console_scripts": [
-            # this is the magic that makes `mood` show up
+            # this makes `mood` show up
             "mood=app.cli:cli"
         ]
     },

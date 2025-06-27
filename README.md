@@ -53,16 +53,22 @@ pip install -r requirements.txt
 # Add a new entry
 mood add --mood happy --date 2024-06-26 --note "Lunch with friends"
 
-# List all entries (default: last 30 days)
+# List all entries
 mood list
 
 # List entries within a custom range
 mood list --from-date 2024-06-01 --to-date 2024-06-30
 
+# List all entries by a specific mood type
+mood list --mood happy
+
+# List entries within a custom range and mood type
+mood list --from-date 2025-06-01 --to-date 2025-06-10 --mood sad
+
 # Reports
 mood report distribution   # counts by mood
 mood report streak         # longest same-mood run
-mood report trend          # e.g. 7-day sliding summary
+
 
 # Demo Script
 bash run.sh   # seeds sample_data/entries_seed.json then prints all three reports

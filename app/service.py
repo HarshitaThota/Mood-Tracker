@@ -15,11 +15,25 @@ def add_entry(mood: str, d: str, note: str = None) -> Entry:
     save_entries(entries)
     return entry
 
-def list_entries(date_from: str = None, date_to: str = None):
+from .repository import load_entries
+from .analytics import filter_by_date
+
+def list_entries(date_from: str = None,
+                 date_to:   str = None,
+                 mood:      str = None):
     entries = load_entries()
+
+    # 1) date filter
     df = date.fromisoformat(date_from) if date_from else None
     dt = date.fromisoformat(date_to)   if date_to   else None
-    return filter_by_date(entries, df, dt)
+    entries = filter_by_date(entries, df, dt)
+
+    # 2) mood filter
+    if mood:
+        entries = [e for e in entries if e.mood.lower() == mood.lower()]
+
+    return entries
+
 
 def get_distribution(date_from: str = None, date_to: str = None):
     entries = list_entries(date_from, date_to)

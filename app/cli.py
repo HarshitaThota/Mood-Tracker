@@ -21,16 +21,17 @@ def add(mood, d, note):
 @cli.command("list")
 @click.option("--from-date", type=str, help="Filter start (YYYY-MM-DD)")
 @click.option("--to-date",   type=str, help="Filter end   (YYYY-MM-DD)")
-def _list(from_date, to_date):
-    """List entries (optional date range)."""
-    entries = list_entries(from_date, to_date)
-
+@click.option("--mood",      type=str, help="Filter by mood label (happy/sad/etc.)")
+def _list(from_date, to_date, mood):
+    """List entries (optional date range and mood type)."""
+    entries = list_entries(from_date, to_date, mood)
     if not entries:
         click.echo("No entries found.")
         sys.exit(0)
 
     for e in entries:
         click.echo(f"{e.id:3} | {e.date} | {e.mood:<7} | {e.note or ''}")
+
 
 
 @cli.group()

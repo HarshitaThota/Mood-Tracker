@@ -76,8 +76,6 @@ bash run.sh   # seeds sample_data/entries_seed.json then prints all three report
 # Add a new entry
 mood add --mood happy --date 2024-06-26 --note "Lunch with friends"
 
-# List all entries (default: last 30 days)
-mood list
 
 # List entries within a custom range
 mood list --from 2024-06-01 --to 2024-06-30
@@ -85,7 +83,7 @@ mood list --from 2024-06-01 --to 2024-06-30
 # Reports
 mood report distribution   # counts by mood
 mood report streak         # longest same-mood run
-mood report trend          # e.g. 7-day sliding summary
+mood list                  # list all entries
 
 
 # Demo Script

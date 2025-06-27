@@ -22,5 +22,17 @@
     "mood": "happy",
     "date": "2025-01-01",
     "note": "HAPPY NEW YEAR"
+  },
+  {
+    "id": 5,
+    "mood": "happy",
+    "date": "2025-01-02",
+    "note": "HAPPY BIRTHDAY"
+  },
+  {
+    "id": 6,
+    "mood": "happy",
+    "date": "2025-06-27",
+    "note": "Gym"
   }
 ]

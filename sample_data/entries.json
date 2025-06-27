@@ -32,7 +32,349 @@
   {
     "id": 6,
     "mood": "happy",
-    "date": "2025-06-27",
+    "date": "2025-02-24",
     "note": "Gym"
+  },
+  {
+    "id": 7,
+    "mood": "happy",
+    "date": "2024-02-25",
+    "note": "Lunch"
+  },
+  {
+    "id": 8,
+    "mood": "anxious",
+    "date": "2025-02-26",
+    "note": "Exam tomorrow, feeling unprepared"
+  },
+  {
+    "id": 9,
+    "mood": "bored",
+    "date": "2025-02-27",
+    "note": "Nothing to do"
+  },
+  {
+    "id": 10,
+    "mood": "happy",
+    "date": "2025-03-25",
+    "note": "Gym"
+  },
+  {
+    "id": 11,
+    "mood": "sad",
+    "date": "2025-03-26",
+    "note": "Rainy day"
+  },
+  {
+    "id": 12,
+    "mood": "anxious",
+    "date": "2025-03-27",
+    "note": "Project deadline"
+  },
+  {
+    "id": 13,
+    "mood": "excited",
+    "date": "2025-03-28",
+    "note": "Morning triumph"
+  },
+  {
+    "id": 14,
+    "mood": "irritated",
+    "date": "2025-03-29",
+    "note": "Traffic jam"
+  },
+  {
+    "id": 15,
+    "mood": "angry",
+    "date": "2025-03-30",
+    "note": "Missed coffee"
+  },
+  {
+    "id": 16,
+    "mood": "happy",
+    "date": "2025-03-31",
+    "note": "Team lunch"
+  },
+  {
+    "id": 17,
+    "mood": "sad",
+    "date": "2025-04-01",
+    "note": "Work overload"
+  },
+  {
+    "id": 18,
+    "mood": "anxious",
+    "date": "2025-04-02",
+    "note": "Upcoming deadline"
+  },
+  {
+    "id": 19,
+    "mood": "excited",
+    "date": "2025-04-03",
+    "note": "Project kick-off"
+  },
+  {
+    "id": 20,
+    "mood": "irritated",
+    "date": "2025-04-04",
+    "note": "Meeting ran long"
+  },
+  {
+    "id": 21,
+    "mood": "angry",
+    "date": "2025-04-05",
+    "note": "Client complaint"
+  },
+  {
+    "id": 22,
+    "mood": "happy",
+    "date": "2025-04-06",
+    "note": "Afternoon walk"
+  },
+  {
+    "id": 23,
+    "mood": "sad",
+    "date": "2025-04-07",
+    "note": "Bad news"
+  },
+  {
+    "id": 24,
+    "mood": "anxious",
+    "date": "2025-04-08",
+    "note": "Server downtime"
+  },
+  {
+    "id": 25,
+    "mood": "excited",
+    "date": "2025-04-09",
+    "note": "New feature release"
+  },
+  {
+    "id": 26,
+    "mood": "irritated",
+    "date": "2025-04-10",
+    "note": "Slow internet"
+  },
+  {
+    "id": 27,
+    "mood": "angry",
+    "date": "2025-04-11",
+    "note": "Missed deadline"
+  },
+  {
+    "id": 28,
+    "mood": "happy",
+    "date": "2025-04-12",
+    "note": "Coffee catch-up"
+  },
+  {
+    "id": 29,
+    "mood": "sad",
+    "date": "2025-04-13",
+    "note": "Missed train"
+  },
+  {
+    "id": 30,
+    "mood": "anxious",
+    "date": "2025-04-14",
+    "note": "Big presentation"
+  },
+  {
+    "id": 31,
+    "mood": "excited",
+    "date": "2025-04-15",
+    "note": "Team outing"
+  },
+  {
+    "id": 32,
+    "mood": "irritated",
+    "date": "2025-04-16",
+    "note": "Printer jam"
+  },
+  {
+    "id": 33,
+    "mood": "angry",
+    "date": "2025-04-17",
+    "note": "Overdue tasks"
+  },
+  {
+    "id": 34,
+    "mood": "happy",
+    "date": "2025-04-18",
+    "note": "Sunny afternoon"
+  },
+  {
+    "id": 35,
+    "mood": "sad",
+    "date": "2025-04-19",
+    "note": "Feeling under the weather"
+  },
+  {
+    "id": 36,
+    "mood": "anxious",
+    "date": "2025-04-20",
+    "note": "Health check-up"
+  },
+  {
+    "id": 37,
+    "mood": "excited",
+    "date": "2025-04-21",
+    "note": "Weekend plan"
+  },
+  {
+    "id": 38,
+    "mood": "irritated",
+    "date": "2025-04-22",
+    "note": "Alarm failure"
+  },
+  {
+    "id": 39,
+    "mood": "angry",
+    "date": "2025-04-23",
+    "note": "Dropped phone"
+  },
+  {
+    "id": 40,
+    "mood": "happy",
+    "date": "2025-04-24",
+    "note": "Good workout"
+  },
+  {
+    "id": 41,
+    "mood": "sad",
+    "date": "2025-04-25",
+    "note": "Missed opportunity"
+  },
+  {
+    "id": 42,
+    "mood": "anxious",
+    "date": "2025-04-26",
+    "note": "Travel planning"
+  },
+  {
+    "id": 43,
+    "mood": "excited",
+    "date": "2025-04-27",
+    "note": "Coffee art session"
+  },
+  {
+    "id": 44,
+    "mood": "irritated",
+    "date": "2025-04-28",
+    "note": "Long queue"
+  },
+  {
+    "id": 45,
+    "mood": "angry",
+    "date": "2025-04-29",
+    "note": "Gym overcrowded"
+  },
+  {
+    "id": 46,
+    "mood": "happy",
+    "date": "2025-04-30",
+    "note": "Read a good book"
+  },
+  {
+    "id": 47,
+    "mood": "sad",
+    "date": "2025-05-01",
+    "note": "Weekend over"
+  },
+  {
+    "id": 48,
+    "mood": "anxious",
+    "date": "2025-05-02",
+    "note": "Upcoming trip"
+  },
+  {
+    "id": 49,
+    "mood": "excited",
+    "date": "2025-05-03",
+    "note": "Hiking adventure"
+  },
+  {
+    "id": 50,
+    "mood": "irritated",
+    "date": "2025-05-04",
+    "note": "Traffic again"
+  },
+  {
+    "id": 51,
+    "mood": "happy",
+    "date": "2025-06-25",
+    "note": "Gym"
+  },
+  {
+    "id": 52,
+    "mood": "sad",
+    "date": "2025-06-26",
+    "note": "Rainy day"
+  },
+  {
+    "id": 53,
+    "mood": "anxious",
+    "date": "2025-06-27",
+    "note": "Project deadline"
+  },
+  {
+    "id": 54,
+    "mood": "happy",
+    "date": "2025-05-08",
+    "note": "Productive coding session"
+  },
+  {
+    "id": 55,
+    "mood": "happy",
+    "date": "2025-05-09",
+    "note": "Tried a new recipe"
+  },
+  {
+    "id": 56,
+    "mood": "happy",
+    "date": "2025-05-10",
+    "note": "Watched a fun movie"
+  },
+  {
+    "id": 57,
+    "mood": "happy",
+    "date": "2025-05-11",
+    "note": "Gym personal best"
+  },
+  {
+    "id": 58,
+    "mood": "happy",
+    "date": "2025-05-12",
+    "note": "Gardening success"
+  },
+  {
+    "id": 59,
+    "mood": "happy",
+    "date": "2025-05-13",
+    "note": "Family call"
+  },
+  {
+    "id": 60,
+    "mood": "happy",
+    "date": "2025-05-14",
+    "note": "Evening yoga"
+  },
+  {
+    "id": 61,
+    "mood": "happy",
+    "date": "2025-06-25",
+    "note": "Gym"
+  },
+  {
+    "id": 62,
+    "mood": "sad",
+    "date": "2025-06-26",
+    "note": "Rainy day"
+  },
+  {
+    "id": 63,
+    "mood": "anxious",
+    "date": "2025-06-27",
+    "note": "Project deadline"
   }
 ]

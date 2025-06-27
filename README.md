@@ -36,7 +36,6 @@ A small, fully-tested Python app for logging and analyzing your daily moods via:
 
 ## 🛠️ Getting Started
 
-
 1. Clone & enter
 git clone https://github.com/HarshitaThota/Mood-Tracker.git
 cd Mood-Tracker
@@ -78,7 +77,7 @@ mood add --mood happy --date 2024-06-26 --note "Lunch with friends"
 
 
 # List entries within a custom range
-mood list --from 2024-06-01 --to 2024-06-30
+mood list --from-date 2024-06-01 --to-date 2024-06-30
 
 # Reports
 mood report distribution   # counts by mood

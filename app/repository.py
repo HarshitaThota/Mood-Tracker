@@ -1,3 +1,4 @@
+# Role: keep all I/O and data-format concerns here, isolated from business logic
 import json
 from pathlib import Path
 from datetime import datetime
@@ -27,3 +28,10 @@ def save_entries(entries: List[Entry], path: Path = STORAGE) -> None:
         p["date"] = p["date"].isoformat()
     tmp.write_text(json.dumps(payload, indent=2))
     tmp.replace(path)
+
+
+
+# Persistence refers to the ability of data to outlive the process that created it.
+# It means that when a program terminates, the data it was working with can be saved
+# and later retrieved by another process or the same process when it's restarted.
+# Essentially, persistence allows you to store and access data across multiple program executions.

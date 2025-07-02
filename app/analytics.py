@@ -1,3 +1,4 @@
+# Role: encapsulate all reporting logic so it’s easy to test and swap in/out.
 from collections import Counter
 from datetime import date, timedelta
 from typing import List, Dict, Optional
@@ -26,13 +27,13 @@ def filter_by_date(
 
 
 def distribution(entries: List[Entry]) -> Dict[str, int]:
-    """Count occurrences of each mood."""
+    """Count occurrences of each mood"""
     return Counter(e.mood for e in entries)
 
 
 def longest_streak(entries: List[Entry]) -> Dict[str, int]:
     """
-    Returns a mapping {mood: longest_consecutive_days}.
+    Returns a mapping {mood: longest_consecutive_days}
     Example: {'happy': 3, 'sad': 2}
     """
     # prep: {date: mood}

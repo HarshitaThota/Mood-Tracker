@@ -6,9 +6,9 @@ echo "[]" > entries.json
 
 # Seed via CLI
 echo "⏳ Adding demo entries"
-mood add --mood happy   --date 2025-06-25 --note "Gym"
-mood add --mood sad     --date 2025-06-26 --note "Rainy day"
-mood add --mood anxious --date 2025-06-27 --note "Project deadline"
+mood add --mood happy   --date 2025-02-25 --note "Gym"
+mood add --mood blissful  --date 2025-02-26 --note "Sunny day"
+mood add --mood happy --date 2025-02-28 --note "Project finished"
 
 # List all entries
 echo

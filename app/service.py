@@ -1,4 +1,4 @@
-# app/service.py
+# Role: orchestrate loading, analytics, and saving in cohesive, named use-case functions. Business logic.
 from datetime import date
 from .models import Entry
 from .repository import load_entries, save_entries
@@ -14,9 +14,6 @@ def add_entry(mood: str, d: str, note: str = None) -> Entry:
     entries.append(entry)
     save_entries(entries)
     return entry
-
-from .repository import load_entries
-from .analytics import filter_by_date
 
 def list_entries(date_from: str = None,
                  date_to:   str = None,

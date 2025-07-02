@@ -1,3 +1,4 @@
+# Role: handle all I/O, user prompts, help text, and exit codes.
 import sys
 from datetime import date
 import click

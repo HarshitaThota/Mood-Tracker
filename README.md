@@ -2,22 +2,6 @@
 
 A small, fully-tested Python app for logging and analyzing your daily moods via:
 
-- **CLI** (Click-based)  
-- **(Optional)** Flask-powered web UI  
-- **Storage**: JSON file by default (SQLite stubbed)  
-
----
-
-## 📋 Table of Contents
-
-1. [Features](#features)  
-2. [Getting Started](#getting-started)  
-3. [Usage](#usage)  
-4. [Project Structure](#project-structure)  
-5. [Architecture](#architecture)  
-6. [Running Tests](#running-tests)  
-7. [Roadmap & Next Steps](#roadmap--next-steps)  
-8. [Contact](#contact)  
 
 ---
 
@@ -28,9 +12,8 @@ A small, fully-tested Python app for logging and analyzing your daily moods via:
 - **Reports**:  
   - **Distribution**: count of each mood  
   - **Streak**: your longest run of the same mood  
-  - **Trend**: sliding-window mood summary (e.g. 7-day)  
 - **Storage**: JSON (no external DB) or SQLite (optional).  
-- **Extensible**: easily swap-out storage, add a Flask UI, or package as a CLI tool.
+- **Extensible**: easily swap-out storage, or package as a CLI tool.
 
 ---
 
@@ -50,18 +33,14 @@ pip install -r requirements.txt
 
 
 
+## 🎮 Usage
 # Add a new entry
 mood add --mood happy --date 2024-06-26 --note "Lunch with friends"
 
 # List all entries
 mood list
-
-# List entries within a custom range
 mood list --from-date 2024-06-01 --to-date 2024-06-30
-
-# List all entries by a specific mood type
 mood list --mood happy
-
 # List entries within a custom range and mood type
 mood list --from-date 2025-06-01 --to-date 2025-06-10 --mood sad
 
@@ -71,30 +50,10 @@ mood report streak         # longest same-mood run
 
 
 # Demo Script
-bash run.sh   # seeds sample_data/entries_seed.json then prints all three reports
+bash run.sh  
+# seeds sample_data/entries_seed.json then prints all three reports
 
 ---
-
-## 🎮 Usage
-
-# CLI
-# Add a new entry
-mood add --mood happy --date 2024-06-26 --note "Lunch with friends"
-
-
-# List entries within a custom range
-mood list --from-date 2024-06-01 --to-date 2024-06-30
-
-# Reports
-mood report distribution   # counts by mood
-mood report streak         # longest same-mood run
-mood list                  # list all entries
-
-
-# Demo Script
-bash run.sh
-# Seeds sample_data/entries_seed.json then prints all three reports
-
 
 ## Project Structure 
 Mood-Tracker/

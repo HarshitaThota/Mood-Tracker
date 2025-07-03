@@ -382,5 +382,35 @@
     "mood": "happy",
     "date": "2024-01-26",
     "note": "Finished painting"
+  },
+  {
+    "id": 65,
+    "mood": "inspired",
+    "date": "2024-01-23",
+    "note": "Started a  painting"
+  },
+  {
+    "id": 66,
+    "mood": "happy",
+    "date": "2027-02-22",
+    "note": "Finished painting"
+  },
+  {
+    "id": 67,
+    "mood": "happy",
+    "date": "2024-01-19",
+    "note": "Lunch with friends"
+  },
+  {
+    "id": 68,
+    "mood": "happy",
+    "date": "2024-01-19",
+    "note": "Lunch with friends"
+  },
+  {
+    "id": 69,
+    "mood": "happy",
+    "date": "2024-01-19",
+    "note": "Lunch with friends"
   }
 ]

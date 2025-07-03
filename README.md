@@ -7,13 +7,13 @@ A small, fully-tested Python app for logging and analyzing your daily moods via:
 
 ## 🚀 Features
 
-- **Add** a mood entry: date, mood type (happy, sad, anxious,…), optional note.  
-- **List** entries by date range.  
+- **Add** a mood entry: date, mood type (happy, sad, anxious,…), optional note  
+- **List** entries by date range
 - **Reports**:  
   - **Distribution**: count of each mood  
   - **Streak**: your longest run of the same mood  
-- **Storage**: JSON (no external DB) or SQLite (optional).  
-- **Extensible**: easily swap-out storage, or package as a CLI tool.
+- **Storage**: JSON (no external DB) or SQLite (optional)  
+- **Extensible**: easily swap-out storage, or package as a CLI tool
 
 ---
 
@@ -47,7 +47,8 @@ mood list --from-date 2025-06-01 --to-date 2025-06-10 --mood sad
 # Reports
 mood report distribution   # counts by mood
 mood report streak         # longest same-mood run
-
+# I collapsed multiple daily logs into the last mood of that day before computing streaks,
+# preserving the user’s final sentiment.
 
 # Demo Script
 bash run.sh  

@@ -12,7 +12,7 @@ A small, fully-tested Python app for logging and analyzing your daily moods via:
 - **Reports**:  
   - **Distribution**: count of each mood  
   - **Streak**: your longest run of the same mood  
-- **Storage**: JSON (no external DB) or SQLite (optional)  
+- **Storage**: JSON (no external DB)   
 - **Extensible**: easily swap-out storage, or package as a CLI tool
 
 ---

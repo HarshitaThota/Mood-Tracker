@@ -12,7 +12,7 @@ def _sorted_by_date(entries: List[Entry]) -> List[Entry]:
 
 
 # ---------- public API ----------
-def filter_by_date(
+def filter_by_date( #O(n)
     entries: List[Entry],
     date_from: Optional[date] = None,
     date_to: Optional[date] = None,
@@ -23,15 +23,15 @@ def filter_by_date(
         out = [e for e in out if e.date >= date_from]
     if date_to:
         out = [e for e in out if e.date <= date_to]
-    return _sorted_by_date(out)
+    return _sorted_by_date(out) # O(n log n) in worst case, O(n) if already sorted
 
 
-def distribution(entries: List[Entry]) -> Dict[str, int]:
+def distribution(entries: List[Entry]) -> Dict[str, int]: #O(n)
     """Count occurrences of each mood."""
     return Counter(e.mood for e in entries)
 
 
-def longest_streak(entries: List[Entry]) -> Dict[str, int]:
+def longest_streak(entries: List[Entry]) -> Dict[str, int]: # O(n log n)
     """
     Returns a mapping {mood: longest_consecutive_days}.
     If multiple entries exist on the same date, the latest entry is used.

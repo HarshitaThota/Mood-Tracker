@@ -8,7 +8,7 @@ from .models import Entry
 
 STORAGE = Path("sample_data/entries.json")
 
-def load_entries(path: Path = STORAGE) -> List[Entry]:
+def load_entries(path: Path = STORAGE) -> List[Entry]: #O(n)
     if not path.exists():
         return []
     raw = json.loads(path.read_text())
@@ -21,7 +21,7 @@ def load_entries(path: Path = STORAGE) -> List[Entry]:
         ) for r in raw
     ]
 
-def save_entries(entries: List[Entry], path: Path = STORAGE) -> None:
+def save_entries(entries: List[Entry], path: Path = STORAGE) -> None: #O(n)
     tmp = path.with_suffix(".tmp")
     payload = [e.__dict__.copy() for e in entries]
     for p in payload:

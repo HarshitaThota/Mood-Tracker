@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from datetime import date # Python’s standard datetime library
 from typing import Optional 
 
-@dataclass
+@dataclass 
 class Entry:
     id: int    # an auto-incrementing unique key so we can easily reference individual records in the future
     mood: str            # free form label, e.g. "happy", "sad", "anxious"
